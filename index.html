@@ -21,8 +21,8 @@
                 <img class = "logo" src="booki.png" alt="logo du site">
             </div>
             <nav class="navbar">
-                <button class ="nav-button">Hébergements</button>
-                <button class ="nav-button">Activités</button>
+                <a href="#hébergement" class ="nav-button">Hébergements</a>
+                <a href="#Activités"class ="nav-button">Activités</a>
             </nav>
         </header>
         <main>
@@ -58,10 +58,31 @@
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </section>
             </div>
-            <div class="hebergements-and-populaires">
+            <div id="hébergement" class="hebergements-and-populaires">
                 <section class="hebergements">
                     <h2>Hébergements à Marseille</h2>
-                    <div class ="Marseille cards"></div>
+                    <div class ="Marseille cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <div class="card-txt">
+                                        <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                    </div>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        
+                    </div>
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -129,7 +150,7 @@
                     </div>
                 </section>
             </div>
-            <div class="activite">
+            <div id="Activités"class="activite">
                 <h2>Activités à Marseille</h2>
                 <div class="activite-cards-container">
 
@@ -138,8 +159,7 @@
         </main>
         <footer>
             <div class="a-propos">
-                <h3>A propos
-                </h3>
+                <h3>A propos</h3>
             </div>
             <div class="nos-hebergements">
                 <h3>Nos Hébergements</h3>
