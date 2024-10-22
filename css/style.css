@@ -73,10 +73,12 @@ main {
 
 .search-bar{
     display: flex;
+    background-color: aquamarine;
 }
 
 .filtres-container{
     display: flex;
+    background-color: blanchedalmond;
 
 }
 .filtres-grid {
