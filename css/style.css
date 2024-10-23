@@ -76,25 +76,26 @@ main {
 .search-bar{
     display: flex;
     align-items: center;
-
     height: 49px;
     width: 377px;
 }
 
 .search-button{
     background-color: #0065FC;
-    color:#F2F2F2;
+    color: white;
     border-radius: 0px 15px 15px 0px;
     border: none;
     height: inherit;
     width: 132px;
+    font-weight: bold;
+    font-size: large;
 }
 .search-button:hover{
     cursor:pointer;
 }
 .map-input{
     width:195px;
-    border: #D9D9D9 solid 1px;
+    border: #F2F2F2 solid 1px;
     height: 92%;
     text-align: center;
     font-weight: bold;
@@ -135,7 +136,14 @@ main {
 }
 .info-nombre-logements{
     display: flex;
-    margin-top: 5px;
+    align-items: center;
+    gap: 10px;
+}
+.info-nombre-logements i{
+    background-color: #0065FC;
+    color:white;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
 }
 body {
     display: flex;
@@ -183,10 +191,10 @@ a {
     display:flex ;
     justify-content: center;
     align-items: center;
-    background-color: #D9D9D9;
+    background-color: #F2F2F2
 }
 #map-logo {
-    transform: scale(150%);
+    transform: scale(120%);
     color: #121820;
 }   
 .section-title {
