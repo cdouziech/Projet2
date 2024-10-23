@@ -27,16 +27,22 @@
             </nav>
         </header>
         <main>
+            
             <div class="info">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p class="info-text"">En plein centre-ville ou en pleine nature</p>
-                <section class="search-bar">
+
+                <section class="info-text">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature</p>
+                </section>
+
+                <form class="search-bar">
                     <div class="map-logo-container">
                         <i id="map-logo"class="fa-solid fa-location-dot"></i>
                     </div>         
-                    <input type="text" class="map-place">
+                    <input type="text" class="map-input" placeholder="Marseille, France">
                     <button class="search-button">Rechercher</button>
-                </section>
+                </form>
+
                 <section class="filtres-container">
                     <p>Filtres</p>
                     <div class="filtres">
@@ -46,10 +52,12 @@
                         <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-fire"></i>Nos pépites</div>
                     </div>
                 </section>
+
                 <section class="info-nombre-logements">
                     <i class="fa-solid fa-circle-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
                 </section>
+
             </div>
             <div id="hébergement" class="hebergements-and-populaires">
                 <section class="hebergements">
