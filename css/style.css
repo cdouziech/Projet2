@@ -10,21 +10,19 @@
     --filter-bg-color: #DEEBFF;
 }
 header {
-    width: 1440px;
-    max-width: 1440px;
+    min-width: 100%;
     height: 79px ;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-
+    background-color: darkviolet;
 }
 main {
-    width:1,440px;
-    height:1,722.02px;
-    padding: 30px 50px 30px 50px;
-    gap: 35px;
-    display:flex;
-    flex-direction:column; 
+    width:100%;
+    max-width: 1340px;
+    background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
 
 }
 .fa-solid {
@@ -33,9 +31,12 @@ main {
 
 
 body {
+
     display: flex;
     justify-content: center;
-
+    background-color: rgb(122, 44, 13);
+    margin: 0;
+    margin-left: 10px;
 }
 
 .main-container {
@@ -45,6 +46,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    background-color: aquamarine;
 }
 
 a {
@@ -74,19 +76,16 @@ a {
 }
 
 .logo-container {
-    width:161.09px;
-    height: 79px;
-    gap: 10px;
     height: 79px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo {
-    width: 61.09px;
+
     height: 19px;
-    top: 30px;
-    left: 50px;
+
+
 }
 /* END  OF NAVBAR */
 
@@ -96,6 +95,7 @@ a {
     display: flex;
     font-weight: bold;
     margin-top: 20px;
+    background-color: aqua;
 }
 .filtres{
     display: flex;
@@ -111,6 +111,7 @@ a {
     gap: 15px;
     padding-left: 15px;
     padding-right: 15px;
+    height: 50px;
 }
 .filtre-item:hover{
     cursor: pointer;
@@ -141,12 +142,11 @@ a {
 }
 
 .info {
-    width: 1,340px;
-    height: 281px;
     display: flex;
     align-items:flex-start;
     flex-direction: column;
     gap: 20px;
+    background-color: crimson;
 }
 
 .info-text {
@@ -222,7 +222,6 @@ footer {
     max-width: 1340px;
     height: 163px;
     background-color: #F2F2F2;
-    margin-left: 50px;
 }
 
 .footer-part{
@@ -245,31 +244,35 @@ footer {
 
 /* START OF ACTIVITES */
 .activites {
-    height: 560px;
-}
-.activites h2{
-    margin-left: 30px;
+    width: 100%;
+    background-color: aqua;
+    max-width: 1340px;
 }
 .activites h3{
-    padding: 0;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    margin-top: 20px;
+    margin: 0;
+    margin-left: 10px;
+}
+.activites .card-content{
+    height: 59px ;
+    display: flex;
+    align-items: center;    
+}
+.activites a{
+    width: 23%;
 }
 .act-card-container{
     height: 439px;
-    width: 1280px;
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
+    margin: 30px;
+    background-color: coral;
 }
 
 .activites .card{
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    height : 439px;
-    width: 297.5px;
+    height : 100%;
     padding: 0;
     margin: 0;
 }
@@ -277,7 +280,9 @@ footer {
     border-radius: inherit;
     border-bottom-left-radius : 0px;
     border-bottom-right-radius : 0px;
-    height: 380px;
+    height: 100%;
+    max-height: 380px;
+    
 
 }
 
@@ -318,7 +323,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 0px;
-    width: 1340px;
+    max-width: 1340px;
+    background-color:chartreuse;
 }
 
 .hebergements-and-populaires section {
@@ -334,11 +340,13 @@ footer {
     max-height: 614px;
 }
 .hebergements .card {
-    width: 250.33px;
     height: 207.25px;
     display: flex;
     flex-direction: column;
     padding: 0;
+}
+.hebergements a{
+    width: 30%;
 }
 .hebergements .card h3, .hebergements .card p,.hebergements .card .card-rating{
     margin: 7px;
@@ -346,7 +354,6 @@ footer {
 .heb-card-lign{
     display: flex;
     margin-bottom: 30px;
-    width: 811px;
     gap: 30px;
 }
 .hebergements h2 {
@@ -354,12 +361,11 @@ footer {
     margin-bottom: 30px;
 }
 .hebergements img {
-    width: 240.33px;
     height: 119px;
     border-top-left-radius : 17px;
     border-top-right-radius : 17px;
-    margin-left: 5px;
-    margin-top: 5px;
+    border: 6px solid white;
+    border-bottom: none;
 }
 
 .afficher-plus {
@@ -450,6 +456,22 @@ footer {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+    .filtres-container{
+        flex-direction: column;
+    }
+    .filtres{
+        margin-left: 0;
+    }
+
+    .card-content{
+        height: 70px;
+    }
+    .act-card-container {
+        max-height: 270px;
+    }
+    .activites img{
+        max-height: 200px;
     }
 }
 
