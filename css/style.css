@@ -15,15 +15,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: darkviolet;
 }
 main {
     width:100%;
     max-width: 1340px;
-    background-color: darkolivegreen;
     display: flex;
     flex-direction: column;
-
+    gap : 30px
 }
 .fa-solid {
     color: var(--main-color);
@@ -34,9 +32,9 @@ body {
 
     display: flex;
     justify-content: center;
-    background-color: rgb(122, 44, 13);
     margin: 0;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .main-container {
@@ -46,7 +44,6 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
 }
 
 a {
@@ -95,13 +92,15 @@ a {
     display: flex;
     font-weight: bold;
     margin-top: 20px;
-    background-color: aqua;
 }
 .filtres{
     display: flex;
     gap :20px;
     margin-left :15px;
-
+}
+.filtre-lign{
+    display: inherit;
+    gap: inherit;
 }
 .filtre-item{
     border:   #D9D9D9 solid 2.3px ;
@@ -146,7 +145,6 @@ a {
     align-items:flex-start;
     flex-direction: column;
     gap: 20px;
-    background-color: crimson;
 }
 
 .info-text {
@@ -168,10 +166,15 @@ a {
     display: flex;
     align-items: center;
     height: 49px;
-    width: 377px;
     margin-top: 5px;
 }
-
+.mini-search-button{
+    display: none;
+}
+.search-input{
+    display: flex;
+    height: 100%;
+}
 .search-button{
     background-color: #0065FC;
     color: white;
@@ -220,7 +223,6 @@ a {
 footer {
     display: flex;
     max-width: 1340px;
-    height: 163px;
     background-color: #F2F2F2;
 }
 
@@ -245,12 +247,16 @@ footer {
 /* START OF ACTIVITES */
 .activites {
     width: 100%;
-    background-color: aqua;
     max-width: 1340px;
+
 }
 .activites h3{
     margin: 0;
     margin-left: 10px;
+}
+
+.activites h2{
+    margin-left: 30px;
 }
 .activites .card-content{
     height: 59px ;
@@ -265,7 +271,6 @@ footer {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    background-color: coral;
 }
 
 .activites .card{
@@ -324,7 +329,6 @@ footer {
     justify-content: space-between;
     padding-top: 0px;
     max-width: 1340px;
-    background-color:chartreuse;
 }
 
 .hebergements-and-populaires section {
@@ -337,7 +341,6 @@ footer {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
-    max-height: 614px;
 }
 .hebergements .card {
     height: 207.25px;
@@ -348,8 +351,11 @@ footer {
 .hebergements a{
     width: 30%;
 }
-.hebergements .card h3, .hebergements .card p,.hebergements .card .card-rating{
-    margin: 7px;
+.hebergements .card-title, .hebergements .card-subtitle, .hebergements .card-rating{
+    margin: 5px 0px 0 15px;
+}
+.hebergements .card-content{
+    margin-top: 3px;
 }
 .heb-card-lign{
     display: flex;
@@ -376,7 +382,6 @@ footer {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
-    max-height: 614px;
 }
 
 .populaires-title {
@@ -459,14 +464,12 @@ footer {
     }
     .filtres-container{
         flex-direction: column;
+        margin-top: 0;
     }
     .filtres{
         margin-left: 0;
     }
 
-    .card-content{
-        height: 70px;
-    }
     .act-card-container {
         max-height: 270px;
     }
@@ -477,6 +480,144 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    header {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    body {
+        margin: 0;
+        margin-top: 20px;
+    }
+    .navbar{
+        width: 100%;
+        font-size: 16px;
+        min-height: 50px;
+        margin-top: 15px;
+    }
+    .navbar a{
+        width: 50%;
+        border-bottom: #D9D9D9 2px solid;
+        
+    }
+    .navbar a:hover{
+        border-bottom:#0065FC 2px solid;   
+    }
+
+    footer{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .logo-container{
+        width: 100%;
+    }
+    .nav-button{
+        border-top: none;
+    }
+    .nav-button:hover{
+        border-top: none;
+    }
+    .info{
+        margin-left: 20px ;
+    }
+    .act-card-container{
+        flex-direction: column;
+    }
+    .activites a{
+        width: 100%;
+    }
+    .act-card-container {
+        height: 100%;
+        max-height: 100%;
+    }
+    .footer-part{
+        width: 100%;
+    }
+    .info{
+        justify-content: center;
+    }
+    .info-text{
+        max-width: calc(100% - 20px);
+        font-size:15px;
+    }
+    .filtres{
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
+    .filtre-lign{
+        flex-direction: column;
+    }
+    .filtre-item{
+        width: 128px;
+    }
+    .search-button{
+        display: none;
+    }
+    .mini-search-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        height: 100%;
+        background-color:#0065FC;
+        width:fit-content;
+        width: 49px;
+
+    }
+    #search-icon{
+    color:#f5f5f5;
+    transform: scale(150%);
+    }
+    .map-input{
+        border: none;
+    }
+    .search-input{
+        display: flex;
+        border: #F2F2F2 solid 2px;
+        height: 90%;
+    }
+    .heb-card-lign{
+        flex-direction: column;
+    }
+    .hebergements{
+        height: 100%;
+    }
+    .hebergements a{
+        width: 100%;
+        min-height: 207px;
+    }
+    .heb-card-lign.card-rating{
+        margin-bottom: 0;
+    }
+    .hebergements-and-populaires section{
+        border-radius:0 ;
+    }
+    .hebergements-and-populaires h2{
+        font-size: 20px;
+    }
+    .hebergements-and-populaires .hebergements{
+        background-color: white;
+    }
+    .populaires{
+        margin-top: 0;
+    }
+    .populaires-cards{
+        flex-direction: column;
+    }
+    .populaires-cards a{
+        width: 100%;
+    }
+    .populaires-cards .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        justify-content: center;
+        height:100%
+    }
     /* ... */
 }
 

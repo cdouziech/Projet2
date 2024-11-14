@@ -38,18 +38,31 @@
                 <form class="search-bar">
                     <div class="map-logo-container">
                         <i id="map-logo"class="fa-solid fa-location-dot"></i>
-                    </div>         
-                    <input type="text" class="map-input" placeholder="Marseille, France">
-                    <button class="search-button">Rechercher</button>
+                    </div> 
+
+                    <div class="search-input">
+                        <input type="text" class="map-input" placeholder="Marseille, France">
+                        <div class="mini-search-button">
+                            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+                        </div>
+                    </div>
+
+                    <button class="search-button">
+                        <span class="search-text">Rechercher</span>
+                    </button>
                 </form>
 
                 <section class="filtres-container">
                     <p>Filtres</p>
                     <div class="filtres">
-                        <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-money-bill-wave"></i>Économique</div>
-                        <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-person"></i>Familial</div>
-                        <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-heart"></i>Romantique</div>
-                        <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-fire"></i>Nos pépites</div>
+                        <div class="filtre-lign">
+                            <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-money-bill-wave"></i>Économique</div>
+                            <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-person"></i>Familial</div>
+                        </div> 
+                        <div class="filtre-lign">
+                            <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-heart"></i>Romantique</div>
+                            <div class="filtre-item"><i id="filtres-icon" class="fa-solid fa-fire"></i>Nos pépites</div>
+                        </div>
                     </div>
                 </section>
 
