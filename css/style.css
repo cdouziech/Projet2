@@ -10,7 +10,8 @@
     --filter-bg-color: #DEEBFF;
 }
 header {
-    min-width: 100%;
+    width: 100%;
+    max-width: 1340px;
     height: 79px ;
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,7 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 a {
@@ -56,9 +58,11 @@ a {
     width: 344px;
     height: 35px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
-
+.navbar a[href="#hébergement"]{
+    margin-right: 50px;
+}
 
 .nav-button{
     display: flex;
@@ -117,7 +121,7 @@ a {
 }
 
 .filtres i{
-    transform: scale(120%);
+    scale: 120%;
 }
 
 .filtre-item:hover{
@@ -210,7 +214,7 @@ a {
     background-color: #F2F2F2
 }
 #map-logo {
-    transform: scale(120%);
+    scale: 120%;
     color: #121820;
 }   
 
@@ -219,6 +223,7 @@ a {
 
 /* START OF FOOTER*/
 footer {
+    width: 100%;
     display: flex;
     max-width: 1340px;
     background-color: #F2F2F2;
@@ -500,7 +505,9 @@ footer {
     .navbar a:hover{
         border-bottom:#0065FC 2px solid;   
     }
-
+    .navbar a[href="#hébergement"]{
+        margin-right: 0px;
+    }
     footer{
         flex-direction: column;
         margin-top: 120px;
@@ -575,7 +582,7 @@ footer {
     }
     #search-icon{
     color:#f5f5f5;
-    transform: scale(130%);
+    scale: 130%;
     }
     .map-logo-container{
         min-width: 45px;
@@ -599,7 +606,7 @@ footer {
         width: 100%;
         min-height: 207px;
     }
-    .heb-card-lign.card-rating{
+    .heb-card-lign .card-rating{
         margin-bottom: 0;
     }
     .hebergements-and-populaires section{
@@ -626,7 +633,10 @@ footer {
         justify-content: space-between;
         box-sizing: border-box;
     }
-
+    .populaires-cards .card-title{
+        font-size: 15px;
+    }
+    
     .hebergements-and-populaires{
         flex-direction: column-reverse;
         justify-content: center;
